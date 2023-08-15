@@ -20,8 +20,7 @@ print(t.position())
 
 def draw_one_line():
     for _ in range(9):
-        t.pencolor(random.choice(color_list))
-        t.dot(20)
+        t.dot(20, random.choice(color_list))
         t.penup()
         t.fd(50)
         t.dot(20)
