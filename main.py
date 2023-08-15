@@ -16,8 +16,14 @@ color_list = [(202, 164, 110), (240, 245, 241), (236, 239, 243), (149, 75, 50), 
 t = Turtle()
 t.speed("fastest")
 turtle.colormode(255)
-print(t.position())
 
+
+t.setheading(225)
+t.penup()
+t.forward(300)
+t.setheading(0)
+
+print(t.position())
 def draw_one_line():
     for _ in range(9):
         t.dot(20, random.choice(color_list))
@@ -26,12 +32,13 @@ def draw_one_line():
         t.dot(20)
         t.pendown()
 
-y_position = 50
+
+y_position = 50-212.13
 
 for _ in range(10):
     draw_one_line()
     t.penup()
-    t.setx(0)
+    t.setx(-212.13)
     t.sety(y_position)
     y_position += 50
 
